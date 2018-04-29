@@ -1,0 +1,11 @@
+* {
+    background: #eee;
+}
+b {
+    display: block;
+}
+#id-1 p,
+#id-2 p {
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
