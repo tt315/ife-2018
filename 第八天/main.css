@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+li ,ul {
+    margin:0;
+    padding: 0;
+}
+header {
+    background: #333;
+    color: #eee;
+    height: 80px;
+    
+}
+#head-content {
+    width: 960px;
+    margin: 0 auto;
+    /* color: #ddd; */
+    
+    overflow: hidden;
+}
+#head-content ul {
+    /* color: #ddd; */
+    /* display: inline-block; */
+    float: right;
+    margin-top: 8px;
+}
+#head-content li {
+    display: inline;
+    margin:0 10px;
+}
+#head-content a {
+    color: #eee;
+
+}
+
+#logo {
+    font-size: 30px;
+    text-decoration: none;
+    /* display: inline-block; */
+    margin-top: 20px;
+    float: left;
+}
+
+#banner {
+    height: 250px;
+    background: lightgreen;
+}
+#banner-content {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    height: 250px;    
+    position: relative;
+    
+}
+#banner ul {
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    
+}
+#banner ul li {
+
+    display: inline-block;
+    border: solid black 1px;
+    padding: 3px 7px;  
+    background: #dfd;
+    color: #555;
+    /* border: solid black 1px;
+    padding: 5px;
+    background: #dfd; */
+}
+#banner li:nth-of-type(2) {
+    padding: 15px 7px 3px 7px;
+}
+
+/* #banner li a:link {
+    border: solid black 1px;
+    padding: 5px;
+    background: #dfd;
+}
+#banner li a:active {
+    border: solid black 1px;
+    padding: 10px 5px 5px 5px;
+    background: #dfd;
+    color: #333;
+} */
+nav {
+    border-bottom: #555 solid  1px;
+    position: relative;
+    
+
+}
+#nav-ul {
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 20px ;
+
+    
+    
+    
+}
+#nav-ul li {
+    display: inline-block;
+    border: #555 solid  1px;
+    padding: 10px 30px;
+    background: #eee;
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px; 
+    margin: -3px;
+    position: relative;
+    bottom: 2px;    
+    z-index: 3;
+}
+
+#nav-ul li:nth-of-type(1) {
+    border-bottom: #fff solid  1px;
+    background: #fff;
+    
+}
+
+/* hr,  #nav-ul {
+    display: inline-block;
+} */
+.item {
+    display: flex;
+    flex-direction: row;
+    width: 980px;
+    margin: 0 auto;
+}
+.content {
+    flex: 200px;
+    height: 200px;
+    border: solid #eee;
+    margin: 10px;
+    
+}
+footer {
+    text-align: center;
+    background: #666;
+    height: 120px;
+    padding: 20px;
+    color: #eee
+}
