@@ -1,0 +1,38 @@
+* {
+    background: #eee;
+    box-sizing: border-box;
+    margin: 0;
+}
+nav {
+    position: fixed;
+    list-style: none;
+    width: 30px;
+    height: 100px;
+    font-size: 10px;
+
+}
+nav li {
+    float: left;
+    width: 50px;
+    border: solid 1px #ddd; 
+}
+section {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.visited {
+    background: lightblue;
+}
+
+b {
+    display: block;
+}
+#id-1 p,
+#id-2 p {
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+#hi {
+    display: block;
+    border: 2px lightblue solid;
+}

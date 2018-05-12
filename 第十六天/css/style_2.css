@@ -1,0 +1,52 @@
+* {
+    
+    box-sizing: border-box;
+    margin: 0;
+}
+nav {
+    position: fixed;
+    list-style: none;
+    width: 30px;
+    height: 100px;
+    font-size: 10px;
+
+}
+nav li {
+    float: left;
+    width: 50px;
+    border: solid 1px #ddd; 
+}
+.visited {
+    background: lightblue;
+}
+
+section {
+    width: 90%;
+    background: lightblue;
+    margin: 0 auto;
+    overflow: auto;
+    box-shadow: 1px 1px 1px #ccc;
+    max-width: 1024px;
+    font-size: 130%;
+}
+header {
+    float: left;
+    width: 20%;
+    
+}
+.main {
+    width: 80%;
+    float: right;
+    background: #fff;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+.sidebar h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 200%;
+
+
+
+}
