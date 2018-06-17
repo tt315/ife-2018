@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+</body>
+
+</tbody>
+</table>
+<script>
+    document.write('<table>')
+    for (let i = 1; i < 10; i++) {
+        document.write('<tr>')
+        for (let j = 1; j < i + 1; j++) {
+            var content = j +'x' + i + '= ' + j * i
+            document.write('<td>' + content + '</td>')
+        }
+        document.write('</tr>')
+    }
+    document.write("</table>");
+    //如何把每轮塞进table里面
+    // 先写入一个table
+    //给每行写一个tr
+    //每行的每个单元格写一个td
+
+</script>
+</body>
+
+</html>

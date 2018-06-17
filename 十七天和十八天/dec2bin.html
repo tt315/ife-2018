@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>IFE ECMAScript</title>
+</head>
+
+<body>
+    <input id="dec-number" type="number" placeholder="输入一个十进制非负整数">
+    <button id="trans-btn">转化为二进制</button>
+    <p id="result">运算结果</p>
+    <script>
+
+        function dec2bin(decNumber) {
+            // 在这里实现你的转化方法，注意需要判断输入必须为一个非负整数
+            if (decNumber > 0 && decNumber % 1 == 0) {
+                var bin = ''
+                var dec = decNumber
+                var temp
+                while (dec >= 1) {
+                    temp = dec % 2
+                    //先取余,然后在除二
+                    dec = parseInt(dec / 2)
+                    //向高位增加
+                    bin = temp.toString() + bin
+                }
+                return bin
+            } else {
+
+
+            }
+        }
+
+        // 实现党点击转化按钮时，将输入的十进制数字转化为二进制，并显示在result的p标签内
+        // Some coding
+        //为什么不把函数单独写出来
+        document.getElementById('trans-btn').onclick = function () {
+            var result = document.getElementById("result")
+            var decNumber = document.getElementById("dec-number").value
+            //这个value是string
+            decNumber = Number(decNumber)
+            var binNumber = dec2bin(decNumber)
+            result.innerHTML = binNumber
+        }
+
+        // 1 给按钮绑定事件
+        // 2 事件函数是得到数据,转换数据,替换html
+        // 3 转换数据是得到数据,转换,return出去
+    </script>
+</body>
+
+</html>

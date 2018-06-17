@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>IFE ECMAScript</title>
+</head>
+
+<body>
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果</p>
+    <script>
+
+
+        document.getElementById("add-btn").onclick = function () {
+            var a = document.getElementById("first-number").value
+            var b = document.getElementById("second-number").value
+            a = Number(a)
+            b = Number(b)
+            if (typeof a == 'number' || typeof b == 'number') {
+                document.getElementById("result").innerHTML = a + b
+
+            } else {
+                console.log("错了");
+
+            }
+
+           
+
+        }
+        document.getElementById("minus-btn").onclick = function () {
+            var a = document.getElementById("first-number").value
+            var b = document.getElementById("second-number").value
+            a = Number(a)
+            b = Number(b)
+            if (typeof a == 'number' || typeof b == 'number') {
+                document.getElementById("result").innerHTML = Number(a) - Number(b)
+
+            } else {
+                console.log("错了");
+
+            }
+
+        }
+        document.getElementById("times-btn").onclick = function () {
+            var a = document.getElementById("first-number").value
+            var b = document.getElementById("second-number").value
+            a = Number(a)
+            b = Number(b)
+            if (typeof a == 'number' || typeof b == 'number') {
+                document.getElementById("result").innerHTML = Number(a) * Number(b)
+            } else {
+                console.log("错了");
+
+            }
+
+
+            
+        }
+        document.getElementById("divide-btn").onclick = function () {
+            var a = document.getElementById("first-number").value
+            var b = document.getElementById("second-number").value
+            a = Number(a)
+            b = Number(b)
+            if (typeof a == 'number' || typeof b == 'number') {
+                if (b != 0) {
+                    document.getElementById("result").innerHTML = Number(a) / Number(b)
+                    
+                } else {
+                    console.log("除数要不为零,改一下除数");
+                }
+            } else {
+                console.log("错了");
+
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>
